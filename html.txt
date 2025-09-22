@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Heart Landscaping</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #2e8b57;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .lang-btn {
+      background: white;
+      color: #2e8b57;
+      border: none;
+      padding: 0.3rem 0.6rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') no-repeat center center/cover;
+      height: 80vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .hero button {
+      background: #ffcc00;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2e8b57;
+    }
+    .services, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .card {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .gallery img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    footer {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 2rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.imgur.com/0QxU7rY.png" alt="Green Heart Landscaping Logo">
+  <nav>
+    <a href="#home" class="lang" data-en="Home" data-es="Inicio">Home</a>
+    <a href="#about" class="lang" data-en="About Us" data-es="Sobre Nosotros">About Us</a>
+    <a href="#services" class="lang" data-en="Services" data-es="Servicios">Services</a>
+    <a href="#gallery" class="lang" data-en="Gallery" data-es="Galería">Gallery</a>
+    <a href="#contact" class="lang" data-en="Contact" data-es="Contacto">Contact</a>
+  </nav>
+  <button class="lang-btn" id="toggleLang">ES</button>
+</header>
+
+<section class="hero" id="home">
+  <h1 class="lang" data-en="Professional Landscaping Services" data-es="Servicios Profesionales de Landscaping">Professional Landscaping Services</h1>
+  <button class="lang" data-en="Get a Quote" data-es="Obtener Cotización">Get a Quote</button>
+</section>
+
+<section id="about">
+  <h2 class="lang" data-en="About Us" data-es="Sobre Nosotros">About Us</h2>
+  <p class="lang" data-en="Green Heart Landscaping provides expert lawn and garden services to make your outdoor spaces beautiful and sustainable."
+             data-es="Green Heart Landscaping ofrece servicios expertos de césped y jardinería para hacer que sus espacios exteriores sean hermosos y sostenibles.">
+    Green Heart Landscaping provides expert lawn and garden services to make your outdoor spaces beautiful and sustainable.
+  </p>
+</section>
+
+<section id="services">
+  <h2 class="lang" data-en="Our Services" data-es="Nuestros Servicios">Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3 class="lang" data-en="Lawn Installation" data-es="Instalación de Césped">Lawn Installation</h3>
+    </div>
+    <div class="card">
+      <h3 class="lang" data-en="Tree & Shrub Care" data-es="Cuidado de Árboles y Arbustos">Tree & Shrub Care</h3>
+    </div>
+    <div class="card">
+      <h3 class="lang" data-en="Hardscaping" data-es="Construcciones de Jardín">Hardscaping</h3>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2 class="lang" data-en="Gallery" data-es="Galería">Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Project 1">
+    <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" alt="Project 2">
+    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Project 3">
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="lang" data-en="Contact Us" data-es="Contáctanos">Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name / Nombre" required><br><br>
+    <input type="email" placeholder="Email / Correo" required><br><br>
+    <textarea placeholder="Message / Mensaje" required></textarea><br><br>
+    <button type="submit" class="lang" data-en="Send Message" data-es="Enviar Mensaje">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Green Heart Landscaping. All rights reserved.
+</footer>
+
+<button class="whatsapp-btn" onclick="window.open('https://wa.me/19419285905', '_blank')">📞</button>
+
+<script>
+  let lang = 'en';
+  document.getElementById('toggleLang').addEventListener('click', () => {
+    lang = lang === 'en' ? 'es' : 'en';
+    document.querySelectorAll('.lang').forEach(el => {
+      el.textContent = el.dataset[lang];
+    });
+    document.getElementById('toggleLang').textContent = lang === 'en' ? 'ES' : 'EN';
+  });
+</script>
+
+</body>
+</html>
